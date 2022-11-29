@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
+
+@import './styles/variables.scss';
+
+body {
+    font-family: 'Cinzel', serif !important;
+    margin: 0;
+    padding: 0;
+    background-color: $bg-color !important;
+    color: $font-color !important;
+}
