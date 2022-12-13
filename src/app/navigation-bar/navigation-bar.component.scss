@@ -1,0 +1,30 @@
+@import '../../styles/variables.scss';
+
+.bg-navbar {
+    background-color: transparent;
+}
+
+.bg-opaque {
+    background-color: rgb(17 16 16);
+}
+
+.navbar-brand, .nav-link {
+    color: $header-font-color !important;
+    font-weight: 600;
+}
+
+.nav-link.active {
+    font-weight: 700;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid;
+}
+
+.navbar-toggler-icon {
+    background-image: $hamburger-icon !important;
+}
+
+button:focus {
+    box-shadow: none !important;
+}

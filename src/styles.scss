@@ -11,3 +11,11 @@ body {
     background-color: $bg-color !important;
     color: $font-color !important;
 }
+
+.full-height-with-header {
+    height: calc(100vh - $header-height);
+}
+
+.full-height {
+    height: 100vh;
+}

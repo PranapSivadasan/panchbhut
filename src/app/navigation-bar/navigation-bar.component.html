@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-md bg-opaque sticky-top p-0">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="../../assets/navLogo.png" alt="PanchBhut" width="50" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#panchbhut-navbar-collapse" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="panchbhut-navbar-collapse">
+            <ul class="navbar-nav mb-2 mb-lg-0 justify-content-center w-100">
+                <ng-container *ngFor="let nav of navigationLinks">
+                    <li class="nav-item mx-2">
+                        <button class="nav-link btn px-3" [ngClass]="{ 'active': nav.active }"
+                            (click)="goto(nav)">{{nav.label}}
+                        </button>
+                    </li>
+                </ng-container>
+            </ul>
+        </div>
+    </div>
+</nav>
