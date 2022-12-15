@@ -1,0 +1,40 @@
+.home-page {
+    background: url('../../assets/home/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        .section-1 {
+            flex-direction: column;
+            align-items: center;
+
+            img {
+                width: 18rem;
+            }
+        }
+
+        .section-3 {
+            p {
+                background: rgba(0, 0, 0, 0.5);
+                padding: 0.5rem;
+                font-weight: 500;
+            }
+
+            .pb-btn {
+                background: url('../../assets/buttonBackground.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                border: none;
+                min-width: 9rem;
+                font-weight: 700;
+                height: 2rem;
+                border-radius: 0.5rem;
+            }
+        }
+    }
+}
