@@ -7,7 +7,41 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TeamComponent implements OnInit {
 
-  constructor() { }
+  team: Array<any>;
+  advisors: Array<any>;
+
+  constructor() {
+    this.team = [
+      {
+        name: 'Elon Musk',
+        title: 'Founder'
+      },
+      {
+        name: 'Elon Musk',
+        title: 'Founder'
+      },
+      {
+        name: 'Elon Musk',
+        title: 'Founder'
+      }
+    ];
+
+    this.advisors = [
+      {
+        name: 'Elon Musk',
+        title: 'Founder'
+      },
+      {
+        name: 'Elon Musk',
+        title: 'Founder'
+      },
+      {
+        name: 'Elon Musk',
+        title: 'Founder'
+      }
+    ];
+
+  }
 
   ngOnInit(): void {
   }

@@ -4,6 +4,15 @@
 
 @import './styles/variables.scss';
 
+
+@mixin button-icons {
+    border: none !important;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
 body {
     font-family: 'Cinzel', serif !important;
     margin: 0;
@@ -13,9 +22,24 @@ body {
 }
 
 .full-height-with-header {
-    height: calc(100vh - $header-height);
+    min-height: calc(100vh - $header-height);
 }
 
 .full-height {
     height: 100vh;
+}
+
+.d-flex-centre, .d-flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+.instagram-btn {
+    @include button-icons();
+    background: url('./assets/team/instagram.svg');
+}
+
+.twitter-btn {
+    @include button-icons();
+    background: url('./assets/team/twitter.svg');
 }
