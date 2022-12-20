@@ -6,7 +6,9 @@
     "start": "ng serve --port 4201",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "404": "cp ./docs/index.html ./docs/404.html",
+    "gensite": "ng build --output-path ./docs && npm run 404"
   },
   "private": true,
   "dependencies": {
