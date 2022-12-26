@@ -1,0 +1,52 @@
+@import '../../styles/variables.scss';
+
+.faq-page {
+    background: url('../../assets/faq/faq_background.jpg');
+    background-position-x: center;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .container {
+        min-height: calc(100vh - $header-height);
+        max-width: 65vw;
+
+        .title {
+            text-align: center !important;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .faq {
+            width: 50vw;
+            margin-left: auto;
+            margin-right: auto;
+
+            details {
+                padding-bottom: 1rem;
+
+                summary {
+                    &::marker {
+                        content: url('../../assets/faq/arrowsquaredown.svg');
+                    }
+
+                    font-weight: 500;
+                    font-size: 1.25rem;
+                }
+
+                p {
+                    margin: 0;
+                }
+
+                &[open] {
+                    summary {
+                        &::marker {
+                            content: url('../../assets/faq/arrowsquareright.svg');
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
