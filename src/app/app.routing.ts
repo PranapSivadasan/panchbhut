@@ -1,5 +1,6 @@
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
+import { GalleryComponent } from "./gallery/gallery.component";
 import { LandingComponent } from "./landing/landing.component";
 
 const routes: Routes = [
@@ -11,6 +12,11 @@ const routes: Routes = [
     {
         path: 'landing',
         component: LandingComponent,
+        pathMatch: 'full'
+    },
+    {
+        path: 'gallery',
+        component: GalleryComponent,
         pathMatch: 'full'
     }
 ];
