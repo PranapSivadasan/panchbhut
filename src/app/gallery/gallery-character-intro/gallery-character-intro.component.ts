@@ -7,6 +7,33 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GalleryCharacterIntroComponent implements OnInit {
 
+  characters: any[] = [
+    {
+      name: 'Character Name',
+      title: 'Character Desc'
+    },
+    {
+      name: 'Character Name',
+      title: 'Character Desc'
+    },
+    {
+      name: 'Character Name',
+      title: 'Character Desc'
+    },
+    {
+      name: 'Character Name',
+      title: 'Character Desc'
+    },
+    {
+      name: 'Character Name',
+      title: 'Character Desc'
+    },
+    {
+      name: 'Character Name',
+      title: 'Character Desc'
+    },
+  ];
+
   constructor() { }
 
   ngOnInit(): void {

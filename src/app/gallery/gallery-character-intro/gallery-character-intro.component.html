@@ -1,1 +1,21 @@
-<p>gallery-character-intro works!</p>
+<div class="character-intro full-height-with-header">
+    <div class="container">
+        <p class="title">Characters Intro</p>
+        <div class="row w-100">
+            <ng-container *ngFor="let char of characters">
+                <div class="col-4 char-group">
+                    <div class="char-image">
+                        <img src="assets/gallery/character.png" alt="team">
+                    </div>
+                    <div class="text-content">
+                        <p class="char-name">{{char.name}}</p>
+                        <p class="char-title">{{char.title}}</p>
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+        <div class="weapons">
+            <img src="assets/gallery/weapons.png" alt="weapons">
+        </div>
+    </div>
+</div>

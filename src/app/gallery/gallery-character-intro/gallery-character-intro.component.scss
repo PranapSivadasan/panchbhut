@@ -1,0 +1,78 @@
+@import '../../../styles/variables.scss';
+
+.character-intro {
+    background: url('../../../assets/gallery/character-intro-background.jpg');
+    background-position-x: center;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .title {
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .container {
+        min-height: calc(100vh - $header-height);
+        max-width: 65vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .row {
+            justify-content: center;
+            grid-row-gap: 1rem;
+        }
+
+        .char-group {
+            padding-top: 1rem;
+
+            .char-image {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+
+                img {
+                    width: 90%;
+                }
+            }
+
+            .text-content {
+                background: rgba(0, 0, 0, 0.25);
+                width: fit-content;
+                margin-right: auto;
+                margin-left: auto;
+                text-align: center !important;
+
+                .char-name {
+                    margin-bottom: 0;
+                    font-weight: 600;
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                }
+
+                .char-title {
+                    font-size: .7rem;
+                    margin-bottom: 0;
+                    padding-left: 0.5rem;
+                    padding-right: 0.5rem;
+                }
+            }
+
+        }
+
+        .weapons {
+            img {
+                width: 40vw;
+            }
+        }
+
+    }
+}
