@@ -36,10 +36,15 @@ body {
 
 .instagram-btn {
     @include button-icons();
-    background: url('./assets/team/instagram.svg');
+    background: url('./assets/instagram.svg');
 }
 
 .twitter-btn {
     @include button-icons();
-    background: url('./assets/team/twitter.svg');
+    background: url('./assets/twitter.svg');
+}
+
+.discord-btn {
+    @include button-icons();
+    background: url('./assets/discord.svg');
 }

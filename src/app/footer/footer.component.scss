@@ -1,0 +1,14 @@
+.footer {
+    background: url('../../assets/footer/footer-background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 7rem;
+
+    display: flex;
+    align-items: center;
+
+    .w-5-rem {
+        width: 5rem;
+    }
+}

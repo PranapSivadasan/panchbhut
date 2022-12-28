@@ -13,6 +13,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { GalleryExploreArtComponent } from './gallery/gallery-explore-art/gallery-explore-art.component';
 import { GalleryVideosComponent } from './gallery/gallery-videos/gallery-videos.component';
 import { GalleryCharacterIntroComponent } from './gallery/gallery-character-intro/gallery-character-intro.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { GalleryCharacterIntroComponent } from './gallery/gallery-character-intr
     GalleryComponent,
     GalleryExploreArtComponent,
     GalleryVideosComponent,
-    GalleryCharacterIntroComponent
+    GalleryCharacterIntroComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
