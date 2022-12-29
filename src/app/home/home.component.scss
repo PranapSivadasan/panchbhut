@@ -13,11 +13,20 @@
         justify-content: space-around;
 
         .section-1 {
+            padding-top: 1.5rem;
             flex-direction: column;
             align-items: center;
 
             img {
                 width: 18rem;
+            }
+        }
+
+        .section-2 {
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+            video {
+                width: 60vw;
             }
         }
 
