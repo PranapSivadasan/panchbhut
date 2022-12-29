@@ -1,0 +1,36 @@
+@import '../../../styles/variables.scss';
+
+.gallery-video {
+    background: url('../../../assets/gallery/videos-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .container {
+        min-height: calc(100vh - $header-height);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .title {
+            text-align: center !important;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .carousel {
+            .carousel-control-prev {
+                .carousel-control-prev-icon {
+                    background-size: 4rem;
+                }
+            }
+
+            .carousel-control-next {
+                .carousel-control-next-icon {
+                    background-size: 4rem;
+                }
+            }
+        }
+    }
+}

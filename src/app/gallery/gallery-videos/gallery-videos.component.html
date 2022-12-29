@@ -1,1 +1,33 @@
-<p>gallery-videos works!</p>
+<div class="gallery-video full-height-with-header">
+    <div class="container py-4">
+        <div class="row">
+            <p class="my-1 title">Watch your favourite characters in action here...!</p>
+        </div>
+
+        <div class="row">
+            <div id="charcterVideos" class="carousel slide d-flex-center">
+                <div class="carousel-inner w-75">
+                    <ng-container *ngFor="let x of a; first as f; index as i">
+                        <div class="carousel-item" [ngClass]="{'active' : f}">
+                            <video src="assets/logo.MOV" class="d-block w-100" loop autoplay controls
+                                [controlsList]="'nodownload'">
+                            </video>
+                        </div>
+                    </ng-container>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#charcterVideos"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#charcterVideos"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+</div>
