@@ -1,0 +1,48 @@
+@import '../../../styles/variables.scss';
+
+.gallery-explore-art {
+    background: url('../../../assets/gallery/explore-art-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .container {
+        min-height: calc(100vh - $header-height);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-row-gap: 2rem;
+
+        .title {
+            text-align: center !important;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .carousel {
+            .carousel-indicators {
+                margin-bottom: -2rem !important;
+                grid-column-gap: 0.5rem !important;
+
+                button {
+                    height: 1rem !important;
+                    width: 1rem !important;
+                    border: 0 !important;
+                    border-radius: 0.5rem !important;
+                }
+            }
+
+            .carousel-control-prev {
+                .carousel-control-prev-icon {
+                    background-size: 4rem;
+                }
+            }
+
+            .carousel-control-next {
+                .carousel-control-next-icon {
+                    background-size: 4rem;
+                }
+            }
+        }
+    }
+}

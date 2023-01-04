@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GalleryExploreArtComponent implements OnInit {
 
+  a = [0,1,2,3];
+
   constructor() { }
 
   ngOnInit(): void {
