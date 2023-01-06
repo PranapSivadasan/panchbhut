@@ -14,6 +14,10 @@ import { GalleryExploreArtComponent } from './gallery/gallery-explore-art/galler
 import { GalleryVideosComponent } from './gallery/gallery-videos/gallery-videos.component';
 import { GalleryCharacterIntroComponent } from './gallery/gallery-character-intro/gallery-character-intro.component';
 import { FooterComponent } from './footer/footer.component';
+import { RoadmapComponent } from './roadmap/roadmap.component';
+import { RoadmapPhasesComponent } from './roadmap/roadmap-phases/roadmap-phases.component';
+import { RoadmapAnnouncementsComponent } from './roadmap/roadmap-announcements/roadmap-announcements.component';
+import { RoadmapUtilitiesComponent } from './roadmap/roadmap-utilities/roadmap-utilities.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +32,11 @@ import { FooterComponent } from './footer/footer.component';
     GalleryExploreArtComponent,
     GalleryVideosComponent,
     GalleryCharacterIntroComponent,
-    FooterComponent
+    FooterComponent,
+    RoadmapComponent,
+    RoadmapPhasesComponent,
+    RoadmapAnnouncementsComponent,
+    RoadmapUtilitiesComponent
   ],
   imports: [
     BrowserModule,

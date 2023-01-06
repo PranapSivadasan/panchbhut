@@ -2,6 +2,7 @@ import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
 import { GalleryComponent } from "./gallery/gallery.component";
 import { LandingComponent } from "./landing/landing.component";
+import { RoadmapComponent } from "./roadmap/roadmap.component";
 
 const routes: Routes = [
     {
@@ -17,6 +18,11 @@ const routes: Routes = [
     {
         path: 'gallery',
         component: GalleryComponent,
+        pathMatch: 'full'
+    },
+    {
+        path: 'roadmap',
+        component: RoadmapComponent,
         pathMatch: 'full'
     }
 ];

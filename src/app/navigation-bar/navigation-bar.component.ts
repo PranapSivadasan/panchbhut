@@ -12,6 +12,7 @@ export class NavigationBarComponent implements OnInit {
     { label: 'Home', base: 'landing', fragment: 'home', active: true },
     { label: 'Story', base: 'landing', fragment: 'story', active: false },
     { label: 'Gallery', base: 'gallery', fragment: '', active: false },
+    { label: 'Roadmap', base: 'roadmap', fragment: '', active: false },
     { label: 'Team', base: 'landing', fragment: 'team', active: false },
     { label: 'FAQ', base: 'landing', fragment: 'faq', active: false }
   ];
