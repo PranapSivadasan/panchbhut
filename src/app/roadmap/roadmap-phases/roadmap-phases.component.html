@@ -1,1 +1,28 @@
-<p>roadmap-phases works!</p>
+<div class="phases full-height-with-header">
+    <div class="container">
+        <div class="row pt-4">
+            <p class="my-1 title">Roadmap</p>
+        </div>
+
+        <div class="row">
+            <img src="assets/roadmap/snake-slab.png" alt="snake-slab">
+        </div>
+        <div class="row">
+            <ng-container *ngFor="let a of phases; let i = index">
+                <div class="col-4 white-text">
+                    <p class="phase-title"> Phase {{i + 1}} </p>
+                    <div class="phase-content">
+                        <p> Add the data for phases here </p>
+                        <p> Add the data for phases here </p>
+                        <p> Add the data for phases here </p>
+                        <p> Add the data for phases here </p>
+                        <p> Add the data for phases here </p>
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+        <div class="weapons">
+            <img src="assets/roadmap/weapons.png" alt="weapons">
+        </div>
+    </div>
+</div>
