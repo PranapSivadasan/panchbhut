@@ -1,0 +1,45 @@
+@import '../../../styles/variables.scss';
+
+.utilities {
+    background: url('../../../assets/roadmap/utilities-background.jpg');
+    background-position-x: center;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .title {
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .container {
+        min-height: calc(100vh - $header-height);
+        max-width: 75vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        grid-row-gap: 1rem;
+
+        .row {
+            justify-content: center;
+            grid-row-gap: 1rem;
+        }
+
+        .heading {
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+
+        .white-text {
+            color: white !important;
+        }
+    }
+}
