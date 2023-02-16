@@ -18,6 +18,7 @@ import { RoadmapComponent } from './roadmap/roadmap.component';
 import { RoadmapPhasesComponent } from './roadmap/roadmap-phases/roadmap-phases.component';
 import { RoadmapAnnouncementsComponent } from './roadmap/roadmap-announcements/roadmap-announcements.component';
 import { RoadmapUtilitiesComponent } from './roadmap/roadmap-utilities/roadmap-utilities.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { RoadmapUtilitiesComponent } from './roadmap/roadmap-utilities/roadmap-u
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
