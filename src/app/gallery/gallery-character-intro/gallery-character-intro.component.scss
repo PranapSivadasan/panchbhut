@@ -50,6 +50,7 @@
                 margin-right: auto;
                 margin-left: auto;
                 text-align: center !important;
+                margin-top: 0.5rem;
 
                 .char-name {
                     margin-bottom: 0;
@@ -61,8 +62,10 @@
                 .char-title {
                     font-size: .7rem;
                     margin-bottom: 0;
+                    margin-top: 0.25rem;
                     padding-left: 0.5rem;
                     padding-right: 0.5rem;
+                    color: rgb(255 199 88) !important;
                 }
             }
 
@@ -70,7 +73,7 @@
 
         .weapons {
             img {
-                width: 40vw;
+                width: 50vw;
             }
         }
 

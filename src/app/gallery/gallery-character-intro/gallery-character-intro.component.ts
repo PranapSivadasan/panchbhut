@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,36 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GalleryCharacterIntroComponent implements OnInit {
 
-  characters: any[] = [
-    {
-      name: 'Character Name',
-      title: 'Character Desc'
-    },
-    {
-      name: 'Character Name',
-      title: 'Character Desc'
-    },
-    {
-      name: 'Character Name',
-      title: 'Character Desc'
-    },
-    {
-      name: 'Character Name',
-      title: 'Character Desc'
-    },
-    {
-      name: 'Character Name',
-      title: 'Character Desc'
-    },
-    {
-      name: 'Character Name',
-      title: 'Character Desc'
-    },
-  ];
+  characters: any[] = [];
 
-  constructor() { }
+  constructor(
+    private https: HttpClient
+  ) { }
 
   ngOnInit(): void {
+    this.https.get('assets/data/character-intro.json').subscribe(
+      (data: any) => {
+        this.characters = data;
+      }
+    );
   }
 
 }
