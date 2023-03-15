@@ -36,10 +36,17 @@
         .heading {
             font-size: 1.2rem;
             font-weight: 500;
+            text-align: center;
         }
 
         .white-text {
             color: white !important;
+        }
+
+        .legend {
+            font-size: 0.75rem;
+            text-align: end;
+            font-weight: 700;
         }
     }
 }
