@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Danava Clan",
+        "title": "The danavas are a mythological race of demigods, the half-brothers to the devas and daityas. The danavas are a part of a larger group of the asuras.",
+        "image": "assets/gallery/Danava.png"
+    },
+    {
+        "name": "Daitya Clan",
+        "title": "A clan of beings that often referred to as demons or the beings of darkness. The Daityas became jealous of the Devas and waged a battle against them in the ancient times.",
+        "image": "assets/gallery/Daitya.png"
+    },
+    {
+        "name": "Saraswat Clan",
+        "title": "A naval force clan of beings that guarded the holy river Saraswati with their massive vessels built with astounding craftsmanship.",
+        "image": "assets/gallery/Saraswat.png"
+    },
+    {
+        "name": "Pishach Clan",
+        "title": "Pishachas like darkness and possess the paranormal ability to shapeshift and assume any form at will and may also become invisible. They also feed on human energy. Sometimes, they possess human beings and alter their thoughts, and the victims are afflicted with a variety of maladies and abnormalities like insanity.",
+        "image": "assets/gallery/Pishach.png"
+    }
+]

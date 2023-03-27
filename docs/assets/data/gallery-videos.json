@@ -1,0 +1,18 @@
+[
+    {
+        "name": "video 1",
+        "video": "assets/logo.MOV"
+    },
+    {
+        "name": "video 2",
+        "video": "assets/logo.MOV"
+    },
+    {
+        "name": "video 3",
+        "video": "assets/logo.MOV"
+    },
+    {
+        "name": "video 4",
+        "video": "assets/logo.MOV"
+    }
+]

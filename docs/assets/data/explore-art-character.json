@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Character 1",
+        "image" : "assets/gallery/character.png"
+    },
+    {
+        "name": "Character 2",
+        "image" : "assets/gallery/character.png"
+    },
+    {
+        "name": "Character 3",
+        "image" : "assets/gallery/character.png"
+    },
+    {
+        "name": "Character 4",
+        "image" : "assets/gallery/character.png"
+    },
+    {
+        "name": "Character 5",
+        "image" : "assets/gallery/character.png"
+    }
+]
