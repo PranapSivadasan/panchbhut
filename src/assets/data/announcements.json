@@ -1,0 +1,14 @@
+[
+    {
+        "name": "announcement 1",
+        "image": "assets/roadmap/announcement.png"
+    },
+    {
+        "name": "announcement 2",
+        "image": "assets/roadmap/announcement.png"
+    },
+    {
+        "name": "announcement 3",
+        "image": "assets/roadmap/announcement.png"
+    }
+]

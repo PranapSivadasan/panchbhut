@@ -7,9 +7,9 @@
         <div class="row">
             <div id="charcterVideos" class="carousel slide d-flex-center">
                 <div class="carousel-inner w-75">
-                    <ng-container *ngFor="let x of a; first as f; index as i">
+                    <ng-container *ngFor="let x of videos; first as f; index as i">
                         <div class="carousel-item" [ngClass]="{'active' : f}">
-                            <video src="assets/logo.MOV" class="d-block w-100" loop autoplay controls
+                            <video src={{x.video}} class="d-block w-100" loop autoplay controls
                                 [controlsList]="'nodownload'">
                             </video>
                         </div>

@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,11 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GalleryVideosComponent implements OnInit {
 
-  a = [0,1,2,3];
+  videos: any[] = [];
 
-  constructor() { }
+  constructor(
+    private https: HttpClient
+  ) { }
 
   ngOnInit(): void {
+    this.https.get('assets/data/gallery-videos.json').subscribe(
+      (data: any) => {
+        this.videos = data;
+      }
+    );
   }
 
 }

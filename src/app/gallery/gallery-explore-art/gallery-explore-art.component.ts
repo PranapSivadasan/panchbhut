@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,11 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GalleryExploreArtComponent implements OnInit {
 
-  a = [0,1,2,3];
+  artCharacters: any[] = [];
 
-  constructor() { }
+  constructor(
+    private https: HttpClient
+  ) { }
 
   ngOnInit(): void {
+    this.https.get('assets/data/explore-art-character.json').subscribe(
+      (data: any) => {
+        this.artCharacters = data;
+      }
+    );
   }
 
 }

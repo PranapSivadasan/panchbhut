@@ -8,7 +8,7 @@
             <div id="characterArts" class="carousel d-flex-center">
 
                 <div class="carousel-indicators">
-                    <ng-container *ngFor="let x of a; first as f; index as i">
+                    <ng-container *ngFor="let x of artCharacters; first as f; index as i">
                         <button type="button" data-bs-target="#characterArts" [attr.data-bs-slide-to]="i"
                             aria-current="true" aria-label="Slide 1" [ngClass]="{active: f}">
                         </button>
@@ -16,9 +16,9 @@
                 </div>
 
                 <div class="carousel-inner w-75">
-                    <ng-container *ngFor="let x of a; first as f; index as i">
+                    <ng-container *ngFor="let x of artCharacters; first as f; index as i">
                         <div class="carousel-item" [ngClass]="{active: f}">
-                            <img src="assets/gallery/character.png" class="d-block w-100" alt="First Image">
+                            <img src={{x.image}} class="d-block w-100" alt="First Image">
                         </div>
                     </ng-container>
                 </div>
