@@ -3,31 +3,31 @@
         <div class="row">
             <p class="my-1 title">Meet our team</p>
         </div>
-        <div class="row w-100">
+        <div class="row team w-100">
             <ng-container *ngFor="let member of team">
-                <div class="col-4 team-group">
+                <div class="col-md-6 col-lg-4 team-group">
                     <div class="member-image">
-                        <img src="assets/team/team.png" alt="team">
+                        <img src={{member.image}} alt="team">
                     </div>
-                    <div class="text-content">
+                    <div class="text-content mt-2">
                         <p class="member-name">{{member.name}}</p>
                         <p class="member-title">{{member.title}}</p>
                     </div>
                     <div class="d-flex-center mt-2">
-                        <button class="twitter-btn"></button>
-                        <button class="ms-3 instagram-btn"></button>
+                        <button class="twitter-btn" (click)="openSocials(member.twitter)"></button>
+                        <button class="ms-3 instagram-btn" (click)="openSocials(member.instagram)"></button>
                     </div>
                 </div>
             </ng-container>
         </div>
-        <div class="row">
+        <!-- <div class="row">
             <p class="my-4 title">------- Advisors -------</p>
         </div>
-        <div class="row w-100">
+        <div class="row team w-100">
             <ng-container *ngFor="let member of advisors">
-                <div class="col-4 team-group">
+                <div class="col-md-6 col-lg-4 team-group">
                     <div class="member-image">
-                        <img src="assets/team/team.png" alt="team">
+                        <img src={{member.image}} alt="advisors">
                     </div>
                     <div class="text-content">
                         <p class="member-name">{{member.name}}</p>
@@ -39,6 +39,6 @@
                     </div>
                 </div>
             </ng-container>
-        </div>
+        </div> -->
     </div>
 </div>

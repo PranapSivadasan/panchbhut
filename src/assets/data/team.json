@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Arun Drabu",
+        "title": "Founder & CEO",
+        "image": "assets/team/Arun Drabu.png",
+        "instagram": "https://www.instagram.com/soaringgaruda",
+        "twitter": "https://twitter.com/soaringgaruda"
+    },
+    {
+        "name": "Prasad Mahale",
+        "title": "Creative Head",
+        "image": "assets/team/Prasad Mahale.png",
+        "instagram": "https://www.instagram.com/art_tantrik",
+        "twitter": "https://twitter.com/ArtTantrik"
+    },
+    {
+        "name": "Mruga Pandya",
+        "title": "Lead Illustrator",
+        "image": "assets/team/Mruga Pandya.png",
+        "instagram": "https://www.instagram.com/horcruxartist",
+        "twitter": "https://twitter.com/ArtistM_"
+    },
+    {
+        "name": "Gokul Gopi",
+        "title": "Lead Graphics & Design",
+        "image": "assets/team/Gokul Gopi.png",
+        "instagram": "https://www.instagram.com/gokuul_gopi",
+        "twitter": "https://twitter.com/NFT_drive"
+    },
+    {
+        "name": "Pranap Sivadasan",
+        "title": "Lead Developer",
+        "image": "assets/team/Pranap.png",
+        "instagram": "https://instagram.com/pranap_sivadasan",
+        "twitter": "https://twitter.com/PranapSivadasan"
+    },
+    {
+        "name": "Mihir Parmar",
+        "title": "Principal Engineer",
+        "image": "assets/team/Mihir Parmar.png",
+        "twitter": "https://twitter.com/0xmihir",
+        "instagram": ""
+    }
+]

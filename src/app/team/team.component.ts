@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -10,40 +11,29 @@ export class TeamComponent implements OnInit {
   team: Array<any>;
   advisors: Array<any>;
 
-  constructor() {
-    this.team = [
-      {
-        name: 'Elon Musk',
-        title: 'Founder'
-      },
-      {
-        name: 'Elon Musk',
-        title: 'Founder'
-      },
-      {
-        name: 'Elon Musk',
-        title: 'Founder'
-      }
-    ];
-
-    this.advisors = [
-      {
-        name: 'Elon Musk',
-        title: 'Founder'
-      },
-      {
-        name: 'Elon Musk',
-        title: 'Founder'
-      },
-      {
-        name: 'Elon Musk',
-        title: 'Founder'
-      }
-    ];
-
+  constructor(
+    private https: HttpClient
+  ) {
+    this.team = [];
+    this.advisors = [];
   }
 
   ngOnInit(): void {
+    this.https.get('assets/data/team.json').subscribe(
+      (data: any) => {
+        this.team = data;
+      }
+    );
+
+    this.https.get('assets/data/advisors.json').subscribe(
+      (data: any) => {
+        this.advisors = data;
+      }
+    );
+  }
+
+  openSocials(link: string) {
+    window.open(link, "_blank");
   }
 
 }

@@ -21,39 +21,44 @@
         justify-content: center;
         align-items: center;
 
-        .team-group {
-            .member-image {
-                width: 100%;
-                display: flex;
-                justify-content: center;
+        .team {
+            justify-content: center;
+            row-gap: 1rem;
 
-                img {
-                    width: 60%;
+            .team-group {
+                .member-image {
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+
+                    img {
+                        width: 60%;
+                    }
                 }
+
+                .text-content {
+                    background: rgba(0, 0, 0, 0.25);
+                    width: fit-content;
+                    margin-right: auto;
+                    margin-left: auto;
+                    text-align: center !important;
+
+                    .member-name {
+                        margin-bottom: 0;
+                        font-weight: 600;
+                        padding-left: 0.5rem;
+                        padding-right: 0.5rem;
+                    }
+
+                    .member-title {
+                        font-size: .75rem;
+                        margin-bottom: 0;
+                        padding-left: 0.5rem;
+                        padding-right: 0.5rem;
+                    }
+                }
+
             }
-
-            .text-content {
-                background: rgba(0, 0, 0, 0.25);
-                width: fit-content;
-                margin-right: auto;
-                margin-left: auto;
-                text-align: center !important;
-
-                .member-name {
-                    margin-bottom: 0;
-                    font-weight: 600;
-                    padding-left: 0.5rem;
-                    padding-right: 0.5rem;
-                }
-
-                .member-title {
-                    font-size: .75rem;
-                    margin-bottom: 0;
-                    padding-left: 0.5rem;
-                    padding-right: 0.5rem;
-                }
-            }
-
         }
 
     }
