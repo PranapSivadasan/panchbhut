@@ -19,6 +19,7 @@ import { RoadmapPhasesComponent } from './roadmap/roadmap-phases/roadmap-phases.
 import { RoadmapAnnouncementsComponent } from './roadmap/roadmap-announcements/roadmap-announcements.component';
 import { RoadmapUtilitiesComponent } from './roadmap/roadmap-utilities/roadmap-utilities.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MdToHtmlPipe } from './pipes/md-to-html.pipe';
 
 @NgModule({
   declarations: [
@@ -37,14 +38,15 @@ import { HttpClientModule } from '@angular/common/http';
     RoadmapComponent,
     RoadmapPhasesComponent,
     RoadmapAnnouncementsComponent,
-    RoadmapUtilitiesComponent
+    RoadmapUtilitiesComponent,
+    MdToHtmlPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [MdToHtmlPipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
