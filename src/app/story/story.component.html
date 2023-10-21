@@ -1,13 +1,9 @@
 <div class="story-page full-height-with-header">
     <p class="title">The Story</p>
-    <div class="scroll">
+    <div class="scroll" *ngIf="storyPageContent">
         <img src="assets/story/paperScroll.png" alt="scroll" class="scroll-image">
         <img src="assets/story/panchbhut.png" alt="panchbhut" class="panchbhut-image">
-        <p class="scroll-content">
-            MEN AND WOMEN ARE NOT BORN LEGENDS. THEY BECOME LEGENDARY BY CHOOSING THE PATH OF DHARMA (RIGHTEOUSNESS).
-            BRINGING SUCH EXEMPLARY LEADERS TO THE FOREFRONT IS THE STORY OF PANCHBHUT. IT IS THE TALE OF FIVE CHOSEN
-            SIBLINGS AND THEIR QUEST TO MANIFEST THE ENERGIES OF THE FIVE ELEMENTS TO BECOME SAVIOURS. IT ALL BEGINS
-            HERE…!
+        <p class="scroll-content" innerHTML={{storyPageContent.storyContent}}>
         </p>
     </div>
     <div class="weapons">

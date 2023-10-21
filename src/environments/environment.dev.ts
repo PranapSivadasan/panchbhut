@@ -5,6 +5,7 @@ export const environment = {
     token: 'B2urrHWzYbbQgbbox_-is_4T9qH-zoKrSxbCMRuKb74'
   },
   entryIDs : {
-    home: '2mRDFTs34Wq4q189oWNBSG'
+    home: '2mRDFTs34Wq4q189oWNBSG',
+    story: '5fIaQgd56MBs6doONSoi3I'
   }
 };
