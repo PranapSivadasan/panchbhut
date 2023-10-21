@@ -27,6 +27,10 @@ export class HomeComponent implements OnInit {
     this.contentfulService.getContent(environment.entryIDs.home).pipe(map(this.homepageMapper.bind(this))).subscribe({
       next: (value) => {
         this.homePageContent = value;
+      },
+      error: (errorMessage) => {
+        console.error('Error while fetching data for home page. Check the error message below for more details.')
+        console.error(errorMessage);
       }
     });
   }
