@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ContentfulService } from '../services/contentful.service';
 import { environment } from 'src/environments/environment.dev';
 import { map } from 'rxjs';
-import * as _ from 'lodash';
+import { cloneDeep } from 'lodash';
 import { MdToHtmlPipe } from '../pipes/md-to-html.pipe';
 
 @Component({
@@ -33,7 +33,7 @@ export class StoryComponent implements OnInit {
   }
 
   storyPageMapper(value: any): any {
-    this.originalResponse = _.cloneDeep(value);
+    this.originalResponse = cloneDeep(value);
     value.storyContent = this.mdToHTML.transform(value.storyContent);
     return value;
   }
