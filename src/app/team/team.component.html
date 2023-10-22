@@ -3,8 +3,8 @@
         <div class="row">
             <p class="my-1 title">Meet our team</p>
         </div>
-        <div class="row team w-100">
-            <ng-container *ngFor="let member of team">
+        <div class="row team w-100" *ngIf="teamPageContent">
+            <ng-container *ngFor="let member of teamPageContent">
                 <div class="col-md-6 col-lg-4 team-group">
                     <div class="member-image">
                         <img src={{member.image}} alt="team">
@@ -14,8 +14,8 @@
                         <p class="member-title">{{member.title}}</p>
                     </div>
                     <div class="d-flex-center mt-2">
-                        <button class="twitter-btn" (click)="openSocials(member.twitter)"></button>
-                        <button class="ms-3 instagram-btn" (click)="openSocials(member.instagram)"></button>
+                        <button *ngIf="member.twitter" class="twitter-btn" (click)="utility.openUrlInNewWindow(member.twitter)"></button>
+                        <button *ngIf="member.instagram" class="ms-3 instagram-btn" (click)="utility.openUrlInNewWindow(member.instagram)"></button>
                     </div>
                 </div>
             </ng-container>

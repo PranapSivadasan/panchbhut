@@ -1,5 +1,9 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { ContentfulService } from '../services/contentful.service';
+import { environment } from 'src/environments/environment.dev';
+import { map } from 'rxjs';
+import { UtilityService } from '../services/utility.service';
+import { cloneDeep } from 'lodash';
 
 @Component({
   selector: 'pb-team',
@@ -8,32 +12,40 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TeamComponent implements OnInit {
 
-  team: Array<any>;
-  advisors: Array<any>;
+  private originalResponse: any;
+  public teamPageContent: any;
 
   constructor(
-    private https: HttpClient
-  ) {
-    this.team = [];
-    this.advisors = [];
-  }
+    private contentfulService: ContentfulService,
+    public utility: UtilityService
+  ) { }
 
   ngOnInit(): void {
-    this.https.get('assets/data/team.json').subscribe(
-      (data: any) => {
-        this.team = data;
+    this.contentfulService.getContent(environment.entryIDs.team).pipe(map(this.teamPageMapper.bind(this))).subscribe({
+      next: (value: any) => {
+        this.teamPageContent = value;
+      },
+      error: (errorMessage) => {
+        console.error('Error while fetching data for team page. Check the error message below for more details.')
+        console.error(errorMessage);
       }
-    );
-
-    this.https.get('assets/data/advisors.json').subscribe(
-      (data: any) => {
-        this.advisors = data;
-      }
-    );
+    });
   }
 
-  openSocials(link: string) {
-    window.open(link, "_blank");
+  teamPageMapper(value: any): any {
+    this.originalResponse = cloneDeep(value);
+    let memberArray = new Array();
+    for (let i = 0; i < this.originalResponse.memberImages.length; i++) {
+      let member = this.originalResponse.memberImages[i];
+      let memberContent: any = {};
+      memberContent['name'] = member.fields.description;
+      memberContent['title'] = member.fields.title;
+      memberContent['image'] = member.fields.file.url;
+      memberContent['twitter'] = this.originalResponse.xTwitterLinks[i] ? this.originalResponse.xTwitterLinks[i].trim() : null;
+      memberContent['instagram'] = this.originalResponse.instagramLinks[i] ? this.originalResponse.instagramLinks[i].trim() : null;
+      memberArray.push(memberContent);
+    }
+    return memberArray;
   }
 
 }

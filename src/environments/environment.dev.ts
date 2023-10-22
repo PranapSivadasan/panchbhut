@@ -6,6 +6,7 @@ export const environment = {
   },
   entryIDs : {
     home: '2mRDFTs34Wq4q189oWNBSG',
-    story: '5fIaQgd56MBs6doONSoi3I'
+    story: '5fIaQgd56MBs6doONSoi3I',
+    team: '6q4rJrVlo2UA1I8g7wibDH'
   }
 };
