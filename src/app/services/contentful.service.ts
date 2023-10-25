@@ -34,5 +34,13 @@ export class ContentfulService {
     return newValue;
   }
 
+  logAllEntryIds(): void {
+    this.client.getEntries().then(
+      (value: any) => {
+        console.log(value);
+      }
+    )
+  }
+
 
 }
