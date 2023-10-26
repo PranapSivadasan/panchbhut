@@ -28,8 +28,6 @@ export class FaqComponent implements OnInit {
       }
     });
 
-    this.contentfulService.logAllEntryIds();
-
   }
 
   faqPageMapper(value: any): any {

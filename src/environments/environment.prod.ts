@@ -8,6 +8,7 @@ export const environment = {
     home: '2mRDFTs34Wq4q189oWNBSG',
     story: '5fIaQgd56MBs6doONSoi3I',
     team: '6q4rJrVlo2UA1I8g7wibDH',
-    faq: '4fktWMpw1FkhG3bmCpQBiI'
+    faq: '4fktWMpw1FkhG3bmCpQBiI',
+    exploreArt: '7bGZ3OPlyQsxYbvH3UqgWJ'
   }
 };

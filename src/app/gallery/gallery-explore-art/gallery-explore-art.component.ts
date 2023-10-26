@@ -1,5 +1,8 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { cloneDeep } from 'lodash';
+import { map } from 'rxjs';
+import { ContentfulService } from 'src/app/services/contentful.service';
+import { environment } from 'src/environments/environment.dev';
 
 @Component({
   selector: 'pb-gallery-explore-art',
@@ -8,18 +11,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GalleryExploreArtComponent implements OnInit {
 
-  artCharacters: any[] = [];
+  public artCharacters: any[] = [];
+  private originalResponse: any;
 
   constructor(
-    private https: HttpClient
+    private contentfulService: ContentfulService
   ) { }
 
   ngOnInit(): void {
-    this.https.get('assets/data/explore-art-character.json').subscribe(
-      (data: any) => {
-        this.artCharacters = data;
+    this.contentfulService.getContent(environment.entryIDs.exploreArt).pipe(map(this.exploreArtMapper.bind(this))).subscribe({
+      next: (value: any) => {
+        this.artCharacters = value;
       }
-    );
+    });
+  }
+
+  exploreArtMapper(value: any): any {
+    this.originalResponse = cloneDeep(value);
+    let returnValue = new Array();
+    for (let node of this.originalResponse.art) {
+      let exporeArrayNode: any = {};
+      exporeArrayNode['title'] = node.fields.title;
+      exporeArrayNode['description'] = node.fields.description;
+      exporeArrayNode['image'] = node.fields.file.url;
+      returnValue.push(exporeArrayNode);
+    }
+    return returnValue;
   }
 
 }
