@@ -22,6 +22,10 @@ export class GalleryExploreArtComponent implements OnInit {
     this.contentfulService.getContent(environment.entryIDs.exploreArt).pipe(map(this.exploreArtMapper.bind(this))).subscribe({
       next: (value: any) => {
         this.artCharacters = value;
+      },
+      error: (errorMessage) => {
+        console.error('Error while fetching data for Explore the art page. Check the error message below for more details.')
+        console.error(errorMessage);
       }
     });
   }

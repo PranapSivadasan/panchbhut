@@ -25,6 +25,10 @@ export class FaqComponent implements OnInit {
     this.contentfulService.getContent(environment.entryIDs.faq).pipe(map(this.faqPageMapper.bind(this))).subscribe({
       next: (value: any) => {
         this.faqs = value;
+      },
+      error: (errorMessage) => {
+        console.error('Error while fetching data for FAQ page. Check the error message below for more details.')
+        console.error(errorMessage);
       }
     });
 
