@@ -11,6 +11,7 @@ export const environment = {
     faq: '4fktWMpw1FkhG3bmCpQBiI',
     exploreArt: '7bGZ3OPlyQsxYbvH3UqgWJ',
     charactersInAction: 'l1WvRpu2CLUbmyJ5idclT',
-    clanIntro: '6zuvm8XiyiIVAsiynJOtdA'
+    clanIntro: '6zuvm8XiyiIVAsiynJOtdA',
+    utilities: '3HC3F24Bdw3m4DyNZtimj9'
   }
 };
