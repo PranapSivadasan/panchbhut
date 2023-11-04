@@ -10,6 +10,7 @@ export const environment = {
     team: '6q4rJrVlo2UA1I8g7wibDH',
     faq: '4fktWMpw1FkhG3bmCpQBiI',
     exploreArt: '7bGZ3OPlyQsxYbvH3UqgWJ',
-    charactersInAction: 'l1WvRpu2CLUbmyJ5idclT'
+    charactersInAction: 'l1WvRpu2CLUbmyJ5idclT',
+    clanIntro: '6zuvm8XiyiIVAsiynJOtdA'
   }
 };

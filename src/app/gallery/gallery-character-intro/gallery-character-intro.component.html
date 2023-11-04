@@ -1,6 +1,6 @@
 <div class="character-intro full-height-with-header">
     <div class="container">
-        <p class="title">Clan Intro</p>
+        <p class="title">{{title}}</p>
         <div class="row w-100">
             <ng-container *ngFor="let char of characters">
                 <div class="col-md-5 char-group">
@@ -8,8 +8,8 @@
                         <img src={{char.image}} alt="team">
                     </div>
                     <div class="text-content">
-                        <p class="char-name">{{char.name}}</p>
-                        <p class="char-title">{{char.title}}</p>
+                        <p class="char-name">{{char.title}}</p>
+                        <p class="char-title">{{char.description}}</p>
                     </div>
                 </div>
             </ng-container>
