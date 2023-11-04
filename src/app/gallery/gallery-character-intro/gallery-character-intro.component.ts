@@ -26,7 +26,7 @@ export class GalleryCharacterIntroComponent implements OnInit {
         this.characters = value.clanList;
       },
       error: (errorMessage) => {
-        console.error('Error while fetching data for Gallery Videos page. Check the error message below for more details.')
+        console.error('Error while fetching data for Gallery Clan intro page. Check the error message below for more details.')
         console.error(errorMessage);
       }
     });
