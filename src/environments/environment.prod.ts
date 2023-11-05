@@ -12,6 +12,7 @@ export const environment = {
     exploreArt: '7bGZ3OPlyQsxYbvH3UqgWJ',
     charactersInAction: 'l1WvRpu2CLUbmyJ5idclT',
     clanIntro: '6zuvm8XiyiIVAsiynJOtdA',
-    utilities: '3HC3F24Bdw3m4DyNZtimj9'
+    utilities: '3HC3F24Bdw3m4DyNZtimj9',
+    socials: '1S2dQ7r4PWHVVDjftGRx1a'
   }
 };
