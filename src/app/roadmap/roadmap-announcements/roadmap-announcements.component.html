@@ -9,7 +9,7 @@
                 <div class="carousel-inner w-75">
                     <ng-container *ngFor="let x of announcements; first as f; index as i">
                         <div class="carousel-item" [ngClass]="{'active' : f}">
-                            <img src={{x.image}} alt="announcement-{{i}}">
+                            <img src={{x}} alt="announcement-{{i}}">
                         </div>
                     </ng-container>
                 </div>
