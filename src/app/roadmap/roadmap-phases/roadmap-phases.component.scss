@@ -56,3 +56,14 @@
         }
     }
 }
+
+.nav-link {
+    color: white !important;
+    font-size: 1.25rem !important;
+
+    &.active {
+        color: $font-color !important;
+        background-color: $bg-color !important;
+        border-color: white !important;
+    }
+}

@@ -14,6 +14,7 @@ export const environment = {
     clanIntro: '6zuvm8XiyiIVAsiynJOtdA',
     utilities: '3HC3F24Bdw3m4DyNZtimj9',
     socials: '1S2dQ7r4PWHVVDjftGRx1a',
-    announcements: '7B8lM0q6ofboJJxrjihF9L'
+    announcements: '7B8lM0q6ofboJJxrjihF9L',
+    phases: '4F2bxWPsHIt4wjW3WpVoDI'
   }
 };
