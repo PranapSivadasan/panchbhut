@@ -1,8 +1,8 @@
 export const environment = {
   production: true,
   contentfulSpaceDetails: {
-    spaceId: 'dgnhrf16rcq0',
-    token: 'B2urrHWzYbbQgbbox_-is_4T9qH-zoKrSxbCMRuKb74'
+    spaceId: '0fhscqltjv0h',
+    token: '1de5Z8d6C8OVRKXrv9dmtkG0JZizL8Bbs3p-e26vg-U'
   },
   entryIDs : {
     home: '2mRDFTs34Wq4q189oWNBSG',
