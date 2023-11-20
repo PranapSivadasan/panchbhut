@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { environment } from 'src/environments/environment.dev';
+import { environment } from 'src/environments/environment.prod';
 import * as contentful from 'contentful'
 import { Observable, from, map } from 'rxjs';
 

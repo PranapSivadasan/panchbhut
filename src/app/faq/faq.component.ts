@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ContentfulService } from '../services/contentful.service';
 import { cloneDeep } from 'lodash';
 import { map } from 'rxjs';
-import { environment } from 'src/environments/environment.dev';
+import { environment } from 'src/environments/environment.prod';
 
 @Component({
   selector: 'pb-faq',

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ContentfulService } from '../services/contentful.service';
-import { environment } from 'src/environments/environment.dev';
+import { environment } from 'src/environments/environment.prod';
 import { map } from 'rxjs';
 import { UtilityService } from '../services/utility.service';
 import { cloneDeep } from 'lodash';

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { cloneDeep } from 'lodash';
 import { map } from 'rxjs';
 import { ContentfulService } from 'src/app/services/contentful.service';
-import { environment } from 'src/environments/environment.dev';
+import { environment } from 'src/environments/environment.prodpd';
 
 @Component({
   selector: 'pb-gallery-videos',
